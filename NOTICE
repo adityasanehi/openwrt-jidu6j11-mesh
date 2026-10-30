@@ -1,0 +1,15 @@
+This is an independent package build using OpenWrt and hostap source.
+
+Firmware and initial setup credit:
+Mayank Raut — https://github.com/themayankraut/Jio-AX6000-6J11-OpenWRT-SSH
+No firmware images or flashing scripts from that project are redistributed here.
+
+hostapd / wpa_supplicant: Jouni Malinen and contributors, BSD-3-Clause.
+See licenses/hostapd-README and licenses/hostapd-COPYING for upstream notices.
+OpenWrt packaging and patches retain their individual upstream licenses,
+including GPL-2.0-only files. The source archives preserve those notices.
+Dynamically linked libraries remain separate packages under their own licenses.
+
+New helper scripts and documentation in this repository are MIT licensed;
+that license does not relicense the upstream package, build files or binaries.
+No affiliation or endorsement by the credited projects is implied.
