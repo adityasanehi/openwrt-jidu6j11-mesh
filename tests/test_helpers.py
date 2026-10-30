@@ -55,7 +55,9 @@ print(v)' "$@"''')
     (work/'backup/wireless').write_text('original test configuration\n')
     shutil.copy(repo/'scripts/rollback.sh',work/'rollback.sh')
     pkg='wpad-basic-mbedtls-2026.08.07~831364bf-r4.apk'
-    shutil.copy(Path('/release')/pkg,work/pkg)
+    recovery=list(Path('/release').glob('wpad-basic-mbedtls-*.apk'))
+    assert len(recovery)==1
+    shutil.copy(recovery[0],work/pkg)
     subprocess.run(['sh',str(work/'rollback.sh')],env=env,check=True)
     assert Path('/etc/config/wireless').read_text() == 'original test configuration\n'
     assert Path('/usr/sbin/wpad').read_text() == 'original usr/sbin/wpad'

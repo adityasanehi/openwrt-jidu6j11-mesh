@@ -24,7 +24,7 @@ The firmware and initial OpenWrt setup are credited to **[Mayank Raut's Jio-AX60
 | MediaTek JIDU6101 / 6J01 | Use its own release's official mesh package. These custom Qualcomm snapshot APKs are not the appropriate download. |
 | Stock Jio firmware | Install compatible OpenWrt first, using the firmware project's own guide. |
 
-`wpad-mesh-mbedtls-2026.08.07~831364bf-r4.apk` is the mesh package. The companion `wpad-basic-mbedtls` APK is for recovery. Both are built from pinned source; they are not signed by OpenWrt. Published SHA-256 checksums identify the exact files we tested.
+`wpad-mesh-mbedtls-2026.08.07~831364bf-r4.apk` is the mesh package. The companion `wpad-basic-mbedtls` APK is for recovery. Inside the install bundle, filenames retain the native `~` version separator; standalone GitHub assets replace it with `.`. Both are built from pinned source; they are not signed by OpenWrt. Published SHA-256 checksums identify the exact files we tested.
 
 ## Before you start
 
